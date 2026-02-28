@@ -501,7 +501,7 @@
             ctx.fillRect(centerX - 30, centerY + 80, 60, 20);
             
             // 机械臂第一段
-            const arm1Length = 80;
+            const arm1Length = 120;
             const arm1Angle = joystickX * 0.5;
             const arm1EndX = centerX + Math.sin(arm1Angle) * arm1Length;
             const arm1EndY = centerY + 80 - Math.cos(arm1Angle) * arm1Length;
@@ -521,7 +521,7 @@
             ctx.fill();
             
             // 机械臂第二段
-            const arm2Length = 60;
+            const arm2Length = 100;
             const arm2Angle = arm1Angle + joystickY * 0.5;
             const arm2EndX = arm1EndX + Math.sin(arm2Angle) * arm2Length;
             const arm2EndY = arm1EndY - Math.cos(arm2Angle) * arm2Length;
